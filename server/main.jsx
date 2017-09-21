@@ -1,5 +1,6 @@
-import { Meteor } from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';  
+import { setupApi } from './graphql/setup.jsx'; // import our API
 
-Meteor.startup(() => {
-  // code to run on server at startup
+Meteor.startup(() => {  
+  setupApi(); 
 });
